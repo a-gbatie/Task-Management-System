@@ -5,7 +5,8 @@ def validate_task_title(title):
   return bool(title.strip()) # title.strip() removes whitespace - bool() converts the result into True or False
     
 def validate_task_description(description):
-    None    
+  # Check that the description is not empty
+  return bool(description.strip())    
     
 def validate_due_date(due_date):
     None
