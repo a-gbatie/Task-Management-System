@@ -36,8 +36,11 @@ def add_task(title, description, due_date):
     
 # Implement mark_task_as_complete function
 def mark_task_as_complete(index, tasks=tasks):
-    None
+  if 0 <= index < len(tasks): # Check if the index exists in task list
+    tasks[index]["completed"] = True # Find dictionary at specified index - change completion status to True
     print("Task marked as complete!")
+  else:
+    print("Invalid task index input.")  
     
 # Implement view_pending_tasks function
 def view_pending_tasks(tasks=tasks):
