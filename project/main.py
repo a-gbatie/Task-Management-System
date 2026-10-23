@@ -25,7 +25,11 @@ def main():
       
       add_task(title, description, due_date)
     elif choice == "2":
-      pass
+      try:
+        index = int(input("Enter task index to complete. **Remember first task starts at index 0: "))
+        mark_task_as_complete(index)
+      except ValueError:
+        print("Invalid input. Please enter a number.")
     elif choice == "3":
       pass
     elif choice == "4":
