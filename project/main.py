@@ -31,7 +31,7 @@ def main():
       except ValueError:
         print("Invalid input. Please enter a number.")
     elif choice == "3":
-      pass
+      view_pending_tasks()
     elif choice == "4":
       pass
     elif choice == "5":
